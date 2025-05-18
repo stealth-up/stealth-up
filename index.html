@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StealthUp - CTO-as-a-Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gray-50">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Launch faster. Smarter. Leaner.</h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-xl mb-6">CTO-as-a-Service for early-stage startups building
+            their MVPs.</p>
+        <div class="flex gap-4">
+            <button onclick="openForm()"
+                class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900 transition">Let’s Talk</button>
+            <a href="#how-it-works" class="border border-black px-6 py-3 rounded-full hover:bg-gray-100 transition">See
+                How It Works</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="px-6 py-20 bg-white text-center" id="how-it-works">
+        <h2 class="text-3xl font-semibold mb-4">No tech co-founder? No problem.</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Most early-stage startups struggle to find the right technical partner.
+            Hiring too early drains your runway. Hiring too late slows your momentum.
+            <span class="text-black font-medium">StealthUp bridges that gap</span> — giving you CTO-level support
+            without full-time overhead.
+        </p>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="px-6 py-20 bg-gray-50 text-center">
+        <h2 class="text-3xl font-semibold mb-4">We turn your idea into a working product — fast.</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Whether you're validating a concept or building your first MVP, we handle everything from architecture to
+            deployment.
+            You stay focused on customers. We take care of the tech.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="px-6 py-20 bg-white text-center">
+        <h2 class="text-3xl font-semibold mb-10">What we do best</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-gray-100 p-6 rounded-xl">🚀 MVP Design & Development</div>
+            <div class="bg-gray-100 p-6 rounded-xl">🧠 Technical Strategy & Architecture</div>
+            <div class="bg-gray-100 p-6 rounded-xl">📊 Lean Validation & Iteration</div>
+            <div class="bg-gray-100 p-6 rounded-xl">🛠️ Scalable Codebase Setup</div>
+            <div class="bg-gray-100 p-6 rounded-xl">🔐 DevOps & Deployment</div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="px-6 py-20 bg-gray-50 text-center">
+        <h2 class="text-3xl font-semibold mb-10">Why startups choose StealthUp</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div>🕒 Launch in weeks, not months</div>
+            <div>💸 No need for a full tech team</div>
+            <div>⚙️ Clean, scalable code from day one</div>
+            <div>🧩 Flexible advisory & dev partnership</div>
+            <div>👣 Start small, grow smart</div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="px-6 py-20 bg-black text-white text-center">
+        <h2 class="text-3xl font-semibold mb-4">Your MVP deserves a strong technical start.</h2>
+        <p class="text-gray-300 mb-6">Let’s build something real — fast, lean, and scalable.</p>
+        <button onclick="openForm()"
+            class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition">Schedule a Free
+            Call</button>
+    </section>
+
+    <!-- Simple Contact Form Modal (hidden by default) -->
+    <div id="formModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-xl max-w-md w-full relative">
+            <button onclick="closeForm()" class="absolute top-2 right-4 text-xl">✕</button>
+            <h3 class="text-2xl font-semibold mb-4">Let’s Talk</h3>
+            <form>
+                <input type="text" placeholder="Your Name" class="w-full mb-3 p-3 border rounded" />
+                <input type="email" placeholder="Your Email" class="w-full mb-3 p-3 border rounded" />
+                <textarea placeholder="Tell us about your idea..." class="w-full mb-3 p-3 border rounded"
+                    rows="4"></textarea>
+                <button type="submit"
+                    class="w-full bg-black text-white p-3 rounded hover:bg-gray-800 transition">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+        function openForm() {
+            document.getElementById("formModal").classList.remove("hidden");
+        }
+        function closeForm() {
+            document.getElementById("formModal").classList.add("hidden");
+        }
+    </script>
+
+</body>
+
+</html>
