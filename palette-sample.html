@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renk Teması Uygulama</title>
+    <link rel="stylesheet" href="palette-sample.css" />
+</head>
+
+<body class="theme-neo-blue">
+    <div class="container">
+        <h1 class="heading">Renk Paleti Uygulama Örneği</h1>
+
+        <label for="theme-selector">Tema Seç:</label>
+        <select id="theme-selector">
+            <option value="theme-neo-blue">Neo Blue</option>
+            <option value="theme-green-circuit">Green Circuit</option>
+            <option value="theme-cyber-violet">Cyber Violet</option>
+            <option value="theme-mono-steel">Mono Steel</option>
+            <option value="theme-sunrise-tech">Sunrise Tech</option>
+        </select>
+
+        <p class="text">
+            Bu paragraf <code>--text</code> rengini kullanır. Arka plan ise <code>--background</code>.
+        </p>
+
+        <button class="button-primary">Primary Button</button>
+        <button class="button-secondary">Secondary Button</button>
+        <a href="#" class="accent-link">Accent Link</a>
+
+        <div class="card">
+            <h2>Kart Başlığı</h2>
+            <p>Bu kutunun arka planı <code>--secondary</code>.</p>
+        </div>
+    </div>
+
+    <script>
+        const themeSelector = document.getElementById('theme-selector');
+        themeSelector.addEventListener('change', (e) => {
+            document.body.className = e.target.value;
+        });
+    </script>
+</body>
+
+</html>

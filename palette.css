@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--primary);
+}
+
+.main-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-button:hover {
+  background: var(--accent);
+}
+
+.theme-switcher {
+  margin-top: 2rem;
+}
+
+/* --- Tema Renk Değişkenleri --- */
+
+.theme-neo-blue {
+  --primary: #2563eb;
+  --secondary: #38bdf8;
+  --background: #f9fafb;
+  --text: #1f2937;
+  --accent: #0ea5e9;
+}
+
+.theme-green-circuit {
+  --primary: #10b981;
+  --secondary: #6ee7b7;
+  --background: #f0fdf4;
+  --text: #111827;
+  --accent: #059669;
+}
+
+.theme-cyber-violet {
+  --primary: #8b5cf6;
+  --secondary: #c084fc;
+  --background: #faf5ff;
+  --text: #1e1b4b;
+  --accent: #7c3aed;
+}
+
+.theme-mono-steel {
+  --primary: #374151;
+  --secondary: #9ca3af;
+  --background: #f3f4f6;
+  --text: #111827;
+  --accent: #6b7280;
+}
+
+.theme-sunrise-tech {
+  --primary: #f97316;
+  --secondary: #fdba74;
+  --background: #fff7ed;
+  --text: #1f2937;
+  --accent: #ea580c;
+}
+
+body.neutral-bg {
+  background: #f0f0f0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.theme-card {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+
+.theme-card h2 {
+  margin-bottom: 1rem;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.swatch {
+  flex: 1 1 150px;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-sample {
+  border: 1px solid #ccc;
+  color: var(--text);
+}

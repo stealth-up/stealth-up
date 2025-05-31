@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: var(--background);
+  color: var(--text);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.button-primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.accent-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  background: var(--secondary);
+  color: white;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+/* Temalar */
+.theme-neo-blue {
+  --primary: #1d4ed8;
+  --secondary: #3b82f6;
+  --accent: #60a5fa;
+  --text: #0f172a;
+  --background: #f8fafc;
+}
+
+.theme-green-circuit {
+  --primary: #059669;
+  --secondary: #10b981;
+  --accent: #34d399;
+  --text: #064e3b;
+  --background: #ecfdf5;
+}
+
+.theme-cyber-violet {
+  --primary: #8b5cf6;
+  --secondary: #7c3aed;
+  --accent: #c084fc;
+  --text: #1e1b4b;
+  --background: #f5f3ff;
+}
+
+.theme-mono-steel {
+  --primary: #374151;
+  --secondary: #6b7280;
+  --accent: #9ca3af;
+  --text: #111827;
+  --background: #f9fafb;
+}
+
+.theme-sunrise-tech {
+  --primary: #f97316;
+  --secondary: #fb923c;
+  --accent: #facc15;
+  --text: #78350f;
+  --background: #fff7ed;
+}
