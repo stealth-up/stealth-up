@@ -96,3 +96,51 @@ body {
   --text: #78350f;
   --background: #fff7ed;
 }
+
+/* bee */
+.theme-bee-sky {
+  --primary: #facc15; /* Arı Sarısı */
+  --secondary: #86efac; /* Yaprak yeşili (buton) */
+  --accent: #38bdf8; /* Parlak gökyüzü mavisi (link) */
+  --text: #1e293b; /* Okunaklı lacivert-gri */
+  --background: #f0f9ff; /* Gökyüzü arka planı */
+}
+
+.button-primary {
+  background: var(--secondary); /* Bitki yeşili */
+  color: #065f46; /* Daha koyu yeşil */
+  border: 2px solid #4ade80;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.button-primary:hover {
+  transform: scale(1.03);
+  background: #4ade80; /* Hover'da daha canlı yeşil */
+}
+
+.button-secondary {
+  background: #bbf7d0; /* Açık yeşil */
+  color: #166534;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor-bee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.05s linear;
+}
